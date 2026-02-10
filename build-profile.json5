@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\31629\\.ohos\\config\\default_wakeonlan_n5LoHzyZjQNQyHkShPT9NELSf8_IePxpb9Zho40f1Os=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B49CD97938706EF7993458944C67E9ABB42FC592298A4BBE1A5439F45FB26F94E34D35C2A3A1E2F",
+          "profile": "C:\\Users\\31629\\.ohos\\config\\default_wakeonlan_n5LoHzyZjQNQyHkShPT9NELSf8_IePxpb9Zho40f1Os=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\31629\\.ohos\\config\\default_wakeonlan_n5LoHzyZjQNQyHkShPT9NELSf8_IePxpb9Zho40f1Os=.p12",
+          "storePassword": "0000001B338AE51F77D052C2C0A7E99281941E2F9F05C3D8E335BA0333BAE43B06D7082D467C135B2E479B"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.1(19)",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
